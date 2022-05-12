@@ -1,6 +1,6 @@
 import heapq
-n = int (input ("numero de vertices "))
-m = int (input ("numero de arestas "))
+n,m = int (input ("Dados de entrada: "))
+
 H =[]
 for j in range (m): #le as arestas do grafo
  a, b, peso = input ().split () #le as arestas de a para b com peso 
@@ -8,7 +8,7 @@ for j in range (m): #le as arestas do grafo
  b = int (b) 
  peso = int (peso) 
  heapq.heappush (H, (peso, a, b)) #coloca a aresta no heap
-vertices=[[]*n for i in range(n)]:    #cria os conjuntos para os n vertices  
+vertices=[[]*n for i in range(n)]    #cria os conjuntos para os n vertices  
 
 for i in range(n):
     vertice[i].append(i) #cada vertice i é inicializado com i
@@ -37,3 +37,4 @@ while count <n-1:
         print(S)
 print(custo)
         
+    
